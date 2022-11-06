@@ -1,5 +1,6 @@
 // general
 @import "libs/normalize.scss";
+@import "mixins/mixins.scss";
 @import "ds-system/ds-styles.scss";
 @import "visually-hidden.scss";
 
@@ -7,4 +8,5 @@
 
 
 // blocks
+@import "blocks/button.scss";
 
