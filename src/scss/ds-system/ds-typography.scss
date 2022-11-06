@@ -1,0 +1,10 @@
+@mixin typography_template($font-size, $line-height, $font-weight: 400) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: normal;
+  line-height: $line-height;
+}
+
+@mixin r-s18-h24 {
+  @include typography_template(18px, 24px);
+}
