@@ -9,6 +9,10 @@
   @include typography_template(18px, 24px);
 }
 
+@mixin r-s16-h24 {
+  @include typography_template(16px, 24px);
+}
+
 @mixin r-s22-h27 {
   @include typography_template(22px, 27px);
 }

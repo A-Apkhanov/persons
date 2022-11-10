@@ -1,0 +1,38 @@
+.navigation {
+  @include clear-list;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &-item {
+    padding-right: 32px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &-link {
+    @include r-s16-h24;
+
+    text-decoration: none;
+    color: $black;
+
+    &:hover:not(:active) {
+      color: $red-200;
+    }
+
+    &:active {
+      color: $red-100;
+    }
+
+    &:focus-visible {
+      outline: none;
+      opacity: 0.3;
+    }
+
+    &--active {
+      color: $red-200;
+    }
+  }
+}
