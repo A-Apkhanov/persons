@@ -1,0 +1,18 @@
+.user {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  &-avatar {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+  }
+
+  &-name {
+    @include r-s22-h27;
+
+    margin-right: 12px;
+  }
+}
