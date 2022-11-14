@@ -4,6 +4,8 @@
 @import "ds-system/ds-styles.scss";
 @import "visually-hidden.scss";
 
+@import "scaffolding.scss";
+
 // layout
 @import "layout/container.scss";
 
@@ -12,3 +14,4 @@
 @import "blocks/logo.scss";
 @import "blocks/navigation";
 @import "blocks/user";
+
