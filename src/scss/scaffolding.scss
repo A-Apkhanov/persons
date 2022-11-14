@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  color: $black;
+  background-color: $grey-200;
+
+  font-family: Calibri, sans-serif;
+
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
