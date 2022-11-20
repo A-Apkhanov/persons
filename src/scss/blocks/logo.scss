@@ -4,16 +4,16 @@
 
   box-sizing: border-box;
 
-  &-text {
+  &_text {
     @include r-s22-h27;
 
     margin: 0;
     padding: 0;
 
-    color: $black;
+    color: $color--text_black;
   }
 
-  &-image {
+  &_image {
     width: 27px;
     height: 27px;
   }

@@ -1,12 +1,31 @@
-$white: #ffffff;
-$black: #000000;
+$color_primary: #F1DF6F;
 
-$yellow-100: #f1df6f;
-$yellow-200: #fee965;
+$color--bg: #E1E1E1;
 
-$red-100: #fca5a5;
-$red-200: #ef4444;
+$color--text_black: #000000;
+$color--text_red: #f50f22;
+$color--text_red-dark: #991B1B;
+$color--text_brown: #92400E;
+$color__text_green: #065F46;
+$color__text-blue: #1E40AF;
+$color__text-blue-dark: #3730A3;
+$color__text-violet : #5B21B6;
+$color__text-magenta: #9D174D;
 
-$grey-100: #e5e7eb;
-$grey-200: #e1e1e1;
-$grey-300: #d1d5db;
+$color__text_link: $color--text_black;
+$color__text_link__hover: $color--text_red;
+$color__text_link__active: $color--text_red;
+
+$color__input_text: $color--text_black;
+$color__input_text_error: $color--text_red-dark;
+$color__input_border: #d1d5db;
+$color__input_border__focus: $color_primary;
+$color__input_border__error: #EF4444;
+
+$color__button_text: $color--text_black;
+$color__button_bg: $color_primary;
+$color__button_bg__disabled: #e5e7eb;
+$color__button_bg__white: #ffffff;
+$color__button_border: $color_primary;
+$color__button_border__white: #d1d5db;
+$color__button_border__disabled: #e5e7eb;

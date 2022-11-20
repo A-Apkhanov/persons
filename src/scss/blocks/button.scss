@@ -11,20 +11,20 @@
   transition: 0.3s;
   text-align: center;
 
-  color: $black;
-  border: none;
+  color: $color__button_text;
+  border: 1px solid $color__button_border;
   border-radius: 9999px;
   outline: none;
 
-  background-color: $yellow-100;
+  background-color: $color__button_bg;
 
 
   &:hover:not(:active):not(:disabled) {
-    background-color: $yellow-200;
+    filter: contrast(120%);
   }
 
   &:active:not(:disabled) {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 2px #FFFFFF, 0 0 0 4px #F1DF6F;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 2px #FFFFFF, 0 0 0 4px $color__button_border;
   }
 
   &:focus-visible:not(:disabled) {
@@ -32,25 +32,25 @@
   }
 
   &:disabled {
-    background-color: $grey-100;
+    background-color: $color__button_bg__disabled;
+    border-color: $color__button_border__disabled;
     cursor: default;
   }
 
-  &--white {
-    background-color: $white;
-    border: 1px solid $yellow-100;
+  &__white {
+    background-color: $color__button_bg__white;
+    border: 1px solid $color__button_border;
 
     &:hover:not(:active):not(:disabled) {
-      background-color: $white;
-      border-color: $yellow-200;
+      background-color: $color__button_bg__white;
     }
 
     &:active:not(:disabled) {
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 2px #FFFFFF, 0 0 0 4px #F1DF6F;
+      border-color: $color__button_border__white;
     }
   }
 
-  &--mail {
+  &__mail {
     &::before {
       content: "";
       background-image: url("../../img/button-mail.svg");
