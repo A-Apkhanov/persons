@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  &-item {
+  &_item {
     padding-right: 32px;
 
     &:last-child {
@@ -12,7 +12,7 @@
     }
   }
 
-  &-link {
+  &_link {
     @include r-s16-h24;
 
     text-decoration: none;
@@ -31,7 +31,7 @@
       opacity: 0.3;
     }
 
-    &--active {
+    &__active {
       color: $red-200;
     }
   }

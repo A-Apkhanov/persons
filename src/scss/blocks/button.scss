@@ -36,7 +36,7 @@
     cursor: default;
   }
 
-  &--white {
+  &__white {
     background-color: $white;
     border: 1px solid $yellow-100;
 
@@ -50,7 +50,7 @@
     }
   }
 
-  &--mail {
+  &__mail {
     &::before {
       content: "";
       background-image: url("../../img/button-mail.svg");

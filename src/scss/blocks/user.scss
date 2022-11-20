@@ -3,14 +3,14 @@
   flex-direction: row-reverse;
   align-items: center;
 
-  &-avatar {
+  &_avatar {
     height: 40px;
     width: 40px;
 
     border-radius: 50%;
   }
 
-  &-name {
+  &_name {
     @include r-s22-h27;
 
     margin-right: 12px;

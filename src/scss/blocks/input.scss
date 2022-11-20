@@ -22,7 +22,7 @@
     border-color: $yellow-100;
   }
 
-  &--error {
+  &__error {
     border-color: $red-200;
 
     background-image: url("../../img/input-error.svg");
@@ -30,7 +30,7 @@
     background-repeat: no-repeat;
   }
 
-  &--search {
+  &__search {
     padding: 10px 40px 10px 36px;
 
     background-image: url("../../img/input-search.svg");
