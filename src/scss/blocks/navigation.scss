@@ -16,14 +16,14 @@
     @include r-s16-h24;
 
     text-decoration: none;
-    color: $black;
+    color: $color__text_link;
 
     &:hover:not(:active) {
-      color: $red-200;
+      color: $color__text_link__hover;
     }
 
     &:active {
-      color: $red-100;
+      color: rgba($color__text_link__hover, 0.5);
     }
 
     &:focus-visible {
@@ -32,7 +32,7 @@
     }
 
     &__active {
-      color: $red-200;
+      color: $color__text_link__active;
     }
   }
 }
