@@ -1,0 +1,41 @@
+.menu {
+
+  &_header {
+    @include b-s18-h24;
+
+    margin: 0 0 16px 0;
+
+    text-transform: uppercase;
+  }
+
+  &_item {
+    margin: 0 0 12px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &_link {
+    @include r-s18-h24;
+
+    color: $color--text_black;
+
+    &__active {
+      color: $color__text_link__active;
+    }
+
+    &:hover:not(:active) {
+      color: $color__text_link__hover;
+    }
+
+    &:active {
+      color: rgba($color__text_link__hover, 0.5);
+    }
+
+    &:focus-visible {
+      outline: none;
+      opacity: 0.3;
+    }
+  }
+}

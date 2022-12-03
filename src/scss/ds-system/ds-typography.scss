@@ -25,6 +25,7 @@
   @include typography_template(22px, 27px);
 }
 
-@mixin r-s22-h27 {
-  @include typography_template(22px, 27px);
+@mixin b-s18-h24 {
+  @include typography_template(18px, 24px, 700);
 }
+
