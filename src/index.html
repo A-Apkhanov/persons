@@ -11,17 +11,16 @@
 	  <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-
   </head>
   <body>
   <header class="header container">
 	  <div class="header_wrapper">
-		  <div class="logo">
+		  <div class="header_logo logo">
 			  <p class="logo_text">ЛИЦА</p>
-			  <img class="logo_image" src="img/logo.svg" alt="LOGO" height="200" width="200">
+			  <img class="logo_image" src="img/logo.svg" alt="LOGO">
 			  <p class="logo_text">Кандидаты</p>
 		  </div>
-		  <ul class="navigation">
+		  <ul class="header_navigation navigation">
 			  <li class="navigation_item">
 				  <a href="#" class="navigation_link navigation_link__active">Найти кандидата</a>
 			  </li>
@@ -34,9 +33,12 @@
 		  </ul>
 		  <label class="visually-hidden" for="header_search">Поиск</label>
 		  <input type="text" class="input input__search header_seach" placeholder="Поиск" id="header_search">
-		  <div class="user header_user">
+		  <div class="header_user user">
 			  <img class="user_avatar" src="img/profile.jpeg" alt="User_Name">
 			  <span class="user_name">Александр</span>
+		  </div>
+		  <div class="header_burger burger">
+			  <span></span>
 		  </div>
 	  </div>
   </header>
@@ -159,5 +161,6 @@
 		  </dd>
 	  </dl>
   </section>
+  <script src="./js/script.js" type="text/javascript"></script>
   </body>
 </html>
