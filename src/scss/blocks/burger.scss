@@ -1,0 +1,60 @@
+.burger {
+  cursor: pointer;
+
+  position: relative;
+
+  width: 30px;
+  height: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $color__burger;
+
+    transition: all 0.3s ease;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  & span {
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+    width: 50%;
+    height: 2px;
+
+    background-color: $color__burger;
+
+    transition: all 0.3s ease 0s;
+  }
+
+  &.active {
+    & span {
+      transform: scale(0);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+  }
+}

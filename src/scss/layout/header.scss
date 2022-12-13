@@ -1,5 +1,29 @@
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+
+  background-color: $color--bg;
+
+  transition: all 0.3s ease;
+
+  &.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100vh - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
   &_wrapper {
+    position: relative;
+
     width: 100%;
 
     padding: 22px 0;
@@ -17,5 +41,50 @@
 
   &_user {
     align-self: center;
+    flex: 0 1 auto;
+  }
+
+  &_logo {
+    flex: 0 1 auto;
+  }
+
+  &_burger {
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    &_wrapper {
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &_seach {
+      flex: 0 1 240px;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    &_wrapper {
+      padding: 12px 0;
+      gap: 10px;
+    }
+
+    &_seach {
+      z-index: 3;
+      flex: 0 1 650px;
+    }
+
+    &_burger {
+      z-index: 3;
+      display: block;
+      flex: 1 0 30px;
+    }
+
+    &_logo {
+      z-index: 3;
+      flex: 1 0 40px;
+    }
   }
 }
