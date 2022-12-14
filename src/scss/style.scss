@@ -9,14 +9,13 @@
 // layout
 @import "layout/container.scss";
 @import "layout/header.scss";
+@import "layout/footer.scss";
 
 // blocks
 @import "blocks/button.scss";
 @import "blocks/logo.scss";
-@import "blocks/navigation";
-@import "blocks/user";
-@import "blocks/input";
-@import "blocks/menu";
-@import "blocks/burger";
-
-
+@import "blocks/navigation.scss";
+@import "blocks/user.scss";
+@import "blocks/input.scss";
+@import "blocks/menu.scss";
+@import "blocks/burger.scss";

@@ -1,0 +1,76 @@
+.footer {
+  background-color: $color--bg-footer;
+
+  &_wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &_block-group {
+    display: flex;
+
+    padding-bottom: 56px;
+  }
+
+  &_menu {
+    margin-right: 167px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &_bottom {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 32px;
+
+    border-top: 1px solid #E5E7EB;
+  }
+
+  &_copyright {
+    @include r-s18-h24;
+
+    color: $color--text_black;
+  }
+
+  &_links {
+    display: flex;
+  }
+
+  &_link {
+    @include r-s18-h24;
+
+    color: $color--text_black;
+
+    padding: 0 8px;
+
+    border-right: 1px solid $color--text_black;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border: none;
+    }
+
+    &__active {
+      color: $color__text_link__active;
+    }
+
+    &:hover:not(:active) {
+      color: $color__text_link__hover;
+    }
+
+    &:active {
+      color: rgba($color__text_link__hover, 0.5);
+    }
+
+    &:focus-visible {
+      outline: none;
+      opacity: 0.3;
+    }
+  }
+}
