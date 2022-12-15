@@ -12,7 +12,7 @@
     padding-bottom: 56px;
   }
 
-  &_menu {
+  &_menu.menu {
     margin-right: 167px;
 
     &:last-child {
@@ -30,7 +30,7 @@
   }
 
   &_copyright {
-    @include r-s18-h24;
+    @include r-s16-h24;
 
     color: $color--text_black;
   }
@@ -40,7 +40,7 @@
   }
 
   &_link {
-    @include r-s18-h24;
+    @include r-s16-h24;
 
     color: $color--text_black;
 
@@ -71,6 +71,38 @@
     &:focus-visible {
       outline: none;
       opacity: 0.3;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &_menu.menu {
+      margin-right: 90px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &_block-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_menu.menu{
+      margin-right: 0;
+      margin-bottom: 36px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      &_bottom {
+        flex-direction: column-reverse;
+      }
+
+      &_links {
+        margin-bottom: 12px;
+      }
     }
   }
 }
