@@ -1,17 +1,17 @@
-$color_primary: #F1DF6F;
+$color_primary: #f1df6f;
 
-$color--bg: #F2F2F2;
-$color--bg-footer: #FFF;
+$color--bg: #f2f2f2;
+$color--bg-footer: #ffffff;
 
 $color--text_black: #000000;
 $color--text_red: #f50f22;
-$color--text_red-dark: #991B1B;
-$color--text_brown: #92400E;
-$color__text_green: #065F46;
-$color__text-blue: #1E40AF;
-$color__text-blue-dark: #3730A3;
-$color__text-violet : #5B21B6;
-$color__text-magenta: #9D174D;
+$color--text_red-dark: #991b1b;
+$color--text_brown: #92400e;
+$color__text_green: #065f46;
+$color__text-blue: #1e40af;
+$color__text-blue-dark: #3730a3;
+$color__text-violet : #5b21b6;
+$color__text-magenta: #9d174d;
 
 $color__text_link: $color--text_black;
 $color__text_link__hover: $color--text_red;
@@ -21,7 +21,7 @@ $color__input_text: $color--text_black;
 $color__input_text_error: $color--text_red-dark;
 $color__input_border: #d1d5db;
 $color__input_border__focus: $color_primary;
-$color__input_border__error: #EF4444;
+$color__input_border__error: #ef4444;
 
 $color__button_text: $color--text_black;
 $color__button_bg: $color_primary;
@@ -32,4 +32,4 @@ $color__button_border__white: #d1d5db;
 $color__button_border__disabled: #e5e7eb;
 
 $color__burger: #111827;
-$color__burger__hover: #F1DF6F;
+$color__burger__hover: #f1df6f;

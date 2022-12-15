@@ -26,7 +26,7 @@
 
     padding-top: 32px;
 
-    border-top: 1px solid #E5E7EB;
+    border-top: 1px solid #e5e7eb;
   }
 
   &_copyright {
@@ -51,6 +51,7 @@
     &:first-child {
       padding-left: 0;
     }
+
     &:last-child {
       padding-right: 0;
       border: none;
@@ -86,7 +87,7 @@
       flex-direction: column;
     }
 
-    &_menu.menu{
+    &_menu.menu {
       margin-right: 0;
       margin-bottom: 36px;
 
