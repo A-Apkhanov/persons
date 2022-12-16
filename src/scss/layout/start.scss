@@ -1,0 +1,123 @@
+.start {
+  display: flex;
+  align-items: center;
+
+  margin: 130px 0;
+
+  &_column-left {
+    margin-right: 25px;
+  }
+
+  &_column-right {
+    flex-shrink: 0;
+    flex-basis: 45%;
+
+    text-align: right;
+  }
+
+  &_title {
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 5vw;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+
+
+    &__accentuated {
+      padding: 0 20px 5px 20px;
+
+      background-color: $color_primary;
+
+      border-radius: 12px;
+    }
+  }
+
+  &_message {
+    font-size: 2vw;
+    line-height: 3vw;
+
+
+    margin: 0;
+
+    color: $color__text-grey;
+  }
+
+  &_actions {
+    display: flex;
+
+    margin-top: 48px;
+  }
+
+  &_actions .button {
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &_cover {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  @media (max-width: 1024px) {
+    &_actions {
+      flex-direction: column;
+    }
+
+    &_actions .button {
+      width: 100%;
+      max-width: 350px;
+
+      margin-right: 0;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+
+    margin: 70px 0;
+
+    &_column-right {
+      flex-basis: auto;
+
+      text-align: center;
+    }
+
+    &_column-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+
+      margin-top: 70px;
+      margin-right: 0;
+    }
+
+    &_actions {
+      width: 100%;
+      max-width: 480px;
+    }
+
+    &_actions .button {
+      max-width: 100%;
+    }
+
+    &_title {
+      @include r-s28-h36;
+    }
+
+    &_message {
+      @include r-s20-h32;
+    }
+  }
+}
