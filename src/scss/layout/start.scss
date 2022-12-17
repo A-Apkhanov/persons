@@ -49,8 +49,9 @@
     margin-top: 48px;
   }
 
-  &_actions .button {
+  &_button.button {
     margin-right: 18px;
+    padding: 12px 32px;
 
     &:last-child {
       margin-right: 0;
@@ -68,7 +69,7 @@
       flex-direction: column;
     }
 
-    &_actions .button {
+    &_button.button {
       width: 100%;
       max-width: 350px;
 
@@ -108,7 +109,7 @@
       max-width: 480px;
     }
 
-    &_actions .button {
+    &_button.button {
       max-width: 100%;
     }
 
