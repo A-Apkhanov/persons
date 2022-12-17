@@ -5,6 +5,10 @@
   line-height: $line-height;
 }
 
+@mixin r-s12-h20 {
+  @include typography_template(12px, 20px);
+}
+
 @mixin r-s14-h20 {
   @include typography_template(14px, 20px);
 }
@@ -25,8 +29,16 @@
   @include typography_template(22px, 27px);
 }
 
+@mixin r-s24-h32 {
+  @include typography_template(24px, 32px);
+}
+
 @mixin r-s28-h36 {
   @include typography_template(28px, 36px);
+}
+
+@mixin r-s32-h38 {
+  @include typography_template(32px, 38px);
 }
 
 @mixin b-s18-h24 {
