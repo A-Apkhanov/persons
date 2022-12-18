@@ -1,0 +1,50 @@
+.subscription {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 100px;
+
+  &_column-left {
+    flex-shrink: 0;
+    flex-basis: 40%;
+  }
+
+  &_column-right {
+    margin-left: 25px;
+  }
+
+  &_form {
+    & .form_wrapper {
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+    & .form_footer {
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+    }
+  }
+
+  &_cover {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    margin-bottom: 90px;
+
+    &_column-left {
+      flex-basis: auto;
+
+      text-align: center;
+    }
+
+    &_column-right {
+      margin-left: 0;
+    }
+
+  }
+}

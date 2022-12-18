@@ -45,9 +45,31 @@
   &_footer-text {
     @include r-s12-h20;
 
+    color: $color__text-grey;
+
+    margin: 0;
+
     & a {
       color: $color--text_black;
       font-weight: 700;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &_wrapper {
+      padding: 32px 36px 44px 36px;
+    }
+
+    &_header {
+      @include r-s28-h36;
+    }
+
+    &_text-accent {
+      @include r-s20-h32;
+    }
+
+    &_footer {
+      padding: 24px 36px;
     }
   }
 }
