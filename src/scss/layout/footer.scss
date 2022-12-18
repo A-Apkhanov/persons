@@ -2,8 +2,8 @@
   background-color: $color--bg-footer;
 
   &_wrapper {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 44px;
+    padding-bottom: 44px;
   }
 
   &_block-group {
@@ -76,12 +76,22 @@
   }
 
   @media (max-width: 1024px) {
+    &_wrapper {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
     &_menu.menu {
       margin-right: 90px;
     }
   }
 
   @media (max-width: 768px) {
+    &_wrapper {
+      padding-top: 19px;
+      padding-bottom: 19px;
+    }
+
     &_block-group {
       display: flex;
       flex-direction: column;
