@@ -1,10 +1,12 @@
 .navigation {
-  @include clear-list;
-
-  display: flex;
-  flex-wrap: wrap;
-
   transition: all 0.3s ease;
+
+  &_list {
+    @include clear-list;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &_item {
     padding-right: 32px;
@@ -45,20 +47,22 @@
     top: 0;
     left: -100%;
 
-    flex-direction: column;
-
-    visibility: hidden;
-    opacity: 0;
-
-    text-align: left;
-
     width: 100%;
 
-    padding: 76px 28px 20px 28px;
+    opacity: 0;
 
-    background: #ffffff;
+    visibility: hidden;
 
-    border-bottom: 1px solid #e5e7eb;
+    &_list {
+      flex-direction: column;
+
+      text-align: left;
+
+      padding: 76px 28px 20px 28px;
+
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+    }
 
     &_item {
       padding: 0 0 16px 0;
