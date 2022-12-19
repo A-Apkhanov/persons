@@ -2,4 +2,12 @@
   display: flex;
 
   margin-bottom: 120px;
+
+  &_benefits {
+    margin-right: 35px;
+  }
+
+  &_tariff {
+    flex: 1 0 580px;
+  }
 }
