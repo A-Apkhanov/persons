@@ -48,3 +48,7 @@
 @mixin b-s18-h24 {
   @include typography_template(18px, 24px, 700);
 }
+
+@mixin b-s135-h135 {
+  @include typography_template(135px, 135px, 700);
+}
