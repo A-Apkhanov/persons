@@ -41,6 +41,10 @@
   @include typography_template(32px, 38px);
 }
 
+@mixin r-s40-h46 {
+  @include typography_template(40px, 46px);
+}
+
 @mixin b-s18-h24 {
   @include typography_template(18px, 24px, 700);
 }

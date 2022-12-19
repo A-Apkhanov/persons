@@ -1,0 +1,42 @@
+.benefits {
+  padding: 60px 150px 60px 60px;
+  border-radius: 16px;
+
+  background-color: $color__bg-benefits;
+
+  &_list {
+    margin: 0;
+  }
+
+  &_title {
+    @include r-s40-h46;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  &_item {
+    @include r-s32-h38;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 5px;
+
+    &:before {
+      content: "";
+      background-image: url("../../img/benefit.svg");
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &_description {
+    @include r-s24-h32;
+
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
