@@ -1,0 +1,33 @@
+.direction {
+  @include r-s24-h32;
+
+  display: inline-flex;
+  align-items: center;
+
+  width: 300px;
+
+  padding: 20px;
+
+  border-radius: 12px;
+  background-color: $color__bg-direction;
+
+  color: $color--text_black;
+
+  &_icon-wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    margin-right: 24px;
+
+    border-radius: 12px;
+    background-color: $color_primary;
+  }
+
+  &_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
