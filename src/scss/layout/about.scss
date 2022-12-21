@@ -8,6 +8,19 @@
   }
 
   &_tariff {
-    flex: 1 0 580px;
+    flex: 1 0 40%;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    &_benefits {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+
+    &_tarriff {
+      flex: 1 1 auto;
+    }
   }
 }

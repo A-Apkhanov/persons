@@ -106,6 +106,10 @@
       }
     }
 
+    &_bottom {
+      padding-top: 19px;
+    }
+
     @media (max-width: 480px) {
       &_bottom {
         flex-direction: column-reverse;
