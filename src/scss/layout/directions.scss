@@ -1,0 +1,16 @@
+.directions {
+  margin-bottom: 124px;
+
+  &_title {
+    @include r-s40-h46;
+
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  &_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 32px;
+  }
+}
