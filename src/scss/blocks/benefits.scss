@@ -23,7 +23,7 @@
     margin-bottom: 10px;
     padding-left: 60px;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: -5px;
@@ -57,7 +57,7 @@
     &_item {
       @include r-s20-h32;
 
-      &:before {
+      &::before {
         top: -8px;
       }
     }
