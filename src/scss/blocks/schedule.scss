@@ -1,0 +1,46 @@
+.schedule {
+  @include r-s16-h24;
+
+  display: inline-block;
+  padding: 2px 12px;
+
+  border-radius: 12px;
+
+  color: $color--text_black;
+  background-color: $color__bg-schedule;
+
+  &_red {
+    color: $color--text_red;
+    background-color: $color__bg-schedule_red;
+  }
+
+  &_yellow {
+    color: $color--text_brown;
+    background-color: $color__bg-schedule_yellow;
+  }
+
+  &_green {
+    color: $color__text_green;
+    background-color: $color__bg-schedule_green;
+  }
+
+  &_blue {
+    color: $color__text-blue;
+    background-color: $color__bg-schedule_blue;
+  }
+
+  &_dark-blue {
+    color: $color__text-blue-dark;
+    background-color: $color__bg-schedule_dark-blue;
+  }
+
+  &_violet {
+    color: $color__text-violet;
+    background-color: $color__bg-schedule_violet;
+  }
+
+  &_magenta {
+    color: $color__text-magenta;
+    background-color: $color__bg-schedule_magenta;
+  }
+}

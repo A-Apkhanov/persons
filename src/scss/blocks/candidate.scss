@@ -1,0 +1,68 @@
+.candidate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 300px;
+
+  padding: 30px 40px;
+
+  background-color: $color__bg-candidate;
+  border-radius: 12px;
+
+  &_schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+
+    margin-bottom: 20px;
+  }
+
+  &_avatar {
+    width: 105px;
+    height: 105px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+  }
+
+  &_name {
+    @include r-s20-h32;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  &_speciality {
+    @include r-s16-h24;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: $color__text-grey;
+  }
+
+  &_experience {
+    @include r-s16-h24;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  &_salary {
+    @include r-s16-h24;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &_button {
+    @include r-s18-h24;
+
+    width: 100%;
+
+    padding: 12px 0;
+  }
+}
