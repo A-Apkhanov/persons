@@ -1,0 +1,29 @@
+.candidates {
+  margin-bottom: 124px;
+
+  &_title {
+    @include r-s40-h46;
+
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  &_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    grid-gap: 32px;
+  }
+
+  @media (max-width: 768px) {
+    &_title {
+      @include r-s24-h32;
+    }
+
+    &_content {
+      grid-gap: 19px;
+    }
+  }
+}
