@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лица.Кандидаты</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header container">
+  <div class="header_wrapper">
+    <div class="header_logo logo">
+      <p class="logo_text">ЛИЦА</p>
+      <img class="logo_image" src="img/logo.svg" alt="LOGO">
+      <p class="logo_text">Кандидаты</p>
+    </div>
+    <nav class="header_navigation navigation">
+      <ul class="navigation_list">
+        <li class="navigation_item">
+          <a href="#" class="navigation_link navigation_link__active">Найти кандидата</a>
+        </li>
+        <li class="navigation_item">
+          <a href="#" class="navigation_link">Попасть в базу</a>
+        </li>
+        <li class="navigation_item">
+          <a href="#" class="navigation_link">О сервисе</a>
+        </li>
+      </ul>
+    </nav>
+    <label class="visually-hidden" for="header_search">Поиск</label>
+    <input type="text" class="input input__search header_seach" placeholder="Поиск" id="header_search">
+    <div class="header_user user">
+      <img class="user_avatar" src="img/profile.jpeg" alt="User_Name">
+      <span class="user_name">Александр</span>
+    </div>
+    <div class="header_burger burger">
+      <span></span>
+    </div>
+  </div>
+</header>
+  <h1>Библиотека компонентов</h1>
+  <section class="container">
+    <h2>Кнопки</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <button class="button" style="padding: 8px 20px;">Button size S</button>
+      <button class="button" style="padding: 8px 24px;">Button size M</button>
+      <button class="button" style="padding: 10px 28px;">Button size L</button>
+      <button class="button" style="padding: 12px 32px;">Button size XL</button>
+
+      <button class="button button__mail" style="padding: 8px 20px;">Button mail size S</button>
+      <button class="button button__mail" style="padding: 8px 24px;">Button mail size M</button>
+      <button class="button button__mail" style="padding: 10px 28px;">Button mail size L</button>
+      <button class="button button__mail" style="padding: 12px 32px;">Button mail size XL</button>
+
+      <button class="button button__white" style="padding: 8px 20px;">Button white size S</button>
+      <button class="button button__white" style="padding: 8px 24px;">Button white size M</button>
+      <button class="button button__white" style="padding: 10px 28px;">Button white size L</button>
+      <button class="button button__white" style="padding: 12px 32px;">Button white size XL</button>
+
+      <button class="button" style="padding: 8px 20px;" disabled>Button disabled size S</button>
+      <button class="button" style="padding: 8px 24px;" disabled>Button disabled size M</button>
+      <button class="button" style="padding: 10px 28px;" disabled>Button disabled size L</button>
+      <button class="button" style="padding: 12px 32px;" disabled>Button disabled size XL</button>
+    </div>
+  </section>
+  <section class="container">
+    <h2>Логотип</h2>
+    <div class="logo">
+      <p class="logo_text">ЛИЦА</p>
+      <img class="logo_image" src="img/logo.svg" alt="LOGO" height="200" width="200">
+      <p class="logo_text">Кандидаты</p>
+    </div>
+  </section>
+  <section class="container">
+    <ul class="navigation">
+      <li class="navigation_item">
+        <a href="#" class="navigation_link navigation_link__active">Найти кандидата</a>
+      </li>
+      <li class="navigation_item">
+        <a href="#" class="navigation_link">Попасть в базу</a>
+      </li>
+      <li class="navigation_item">
+        <a href="#" class="navigation_link">О сервисе</a>
+      </li>
+    </ul>
+  </section>
+  <section class="container">
+    <div class="user">
+      <img class="user_avatar" src="img/profile.jpeg" alt="User_Name">
+      <span class="user_name">Александр</span>
+    </div>
+  </section>
+  <section class="container">
+    <input type="text" class="input" placeholder="user@example.com">
+    <input type="text" class="input input__error" placeholder="user@example.com">
+    <input type="text" class="input input__search" placeholder="Поиск">
+  </section>
+  <section class="container">
+    <input type="text" class="input" placeholder="user@example.com">
+    <input type="text" class="input input__error" placeholder="user@example.com">
+    <input type="text" class="input input__search" placeholder="Поиск">
+  </section>
+</body>
+</html>
