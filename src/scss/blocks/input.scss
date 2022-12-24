@@ -1,3 +1,6 @@
+@use "../ds-system/ds-colors" as *;
+@use "../ds-system/ds-typography" as *;
+
 .input {
   @include r-s14-h20;
 
@@ -26,7 +29,7 @@
 
     color: $color__input_text_error;
 
-    background-image: url("../../img/input-error.svg");
+    background-image: url("../img/input-error.svg");
     background-position: bottom 50% right 20px;
     background-repeat: no-repeat;
   }
@@ -34,7 +37,7 @@
   &__search {
     padding: 10px 40px 10px 36px;
 
-    background-image: url("../../img/input-search.svg");
+    background-image: url("../img/input-search.svg");
     background-position: bottom 50% left 14px;
     background-repeat: no-repeat;
   }

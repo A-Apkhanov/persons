@@ -1,3 +1,6 @@
+@use "../ds-system/ds-colors" as *;
+@use "../ds-system/ds-typography" as *;
+
 .button {
   @include r-s18-h24;
   display: block;
@@ -52,7 +55,7 @@
   &__mail {
     &::before {
       content: "";
-      background-image: url("../../img/button-mail.svg");
+      background-image: url("../img/button-mail.svg");
       background-position: center;
       background-repeat: no-repeat;
       margin-right: 14px;
