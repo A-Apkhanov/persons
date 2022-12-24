@@ -1,34 +1,43 @@
 {
-  "name": "planetarium",
+  "name": "persons",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "htmllint": "htmlhint \"src/*.html\"",
-    "stylelint": "npx stylelint \"**/*.scss\""
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^2.27.5",
-    "browserslist": "^4.16.8",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-cli": "^2.3.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.0.0",
-    "sass": "^1.38.0",
-    "scss": "^0.2.4"
+    "stylelint": "npx stylelint \"**/*.scss\"",
+    "start": "NODE_ENV=development webpack serve --open --hot",
+    "dev": "NODE_ENV=development webpack",
+    "build": "NODE_ENV=production webpack"
   },
   "browserslist": [
-    "last 2 versions"
+    "last 2 versions",
+    "> 1%",
+    "IE 10"
   ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "htmlhint": "^1.1.4",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss": "^8.4.20",
+    "postcss-loader": "^7.0.2",
+    "postcss-preset-env": "^7.8.3",
     "postcss-scss": "^4.0.6",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
     "stylelint": "^14.16.0",
-    "stylelint-config-htmlacademy": "^1.1.4"
+    "stylelint-config-htmlacademy": "^1.1.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   }
 }

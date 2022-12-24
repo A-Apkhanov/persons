@@ -1,3 +1,7 @@
+@use "../ds-system/ds-colors" as *;
+@use "../ds-system/ds-typography" as *;
+@use "../mixins/m_clear-list" as *;
+
 .navigation {
   transition: all 0.3s ease;
 

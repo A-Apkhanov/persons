@@ -1,3 +1,6 @@
+@use "../ds-system/ds-colors" as *;
+@use "../ds-system/ds-typography" as *;
+
 .benefits {
   padding: 40px;
   border-radius: 16px;
@@ -28,7 +31,7 @@
       position: absolute;
       top: -5px;
       left: 0;
-      background-image: url("../../img/benefit.svg");
+      background-image: url("../img/benefit.svg");
       background-repeat: no-repeat;
       width: 60px;
       height: 40px;
