@@ -1,4 +1,4 @@
 {
   "customSyntax": "postcss-scss",
-  "extends": "stylelint-config-htmlacademy"
+  "extends": "stylelint-config-recommended-scss"
 }
