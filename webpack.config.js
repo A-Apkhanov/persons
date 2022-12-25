@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 let mode = process.env.NODE_ENV === "production" ? "production" : "development";
 

@@ -6,14 +6,12 @@
   "scripts": {
     "htmllint": "htmlhint \"src/*.html\"",
     "stylelint": "npx stylelint \"**/*.scss\"",
-    "start": "NODE_ENV=development webpack serve --open --hot",
+    "start": "NODE_ENV=development webpack serve --open",
     "dev": "NODE_ENV=development webpack",
     "build": "NODE_ENV=production webpack"
   },
   "browserslist": [
-    "last 2 versions",
-    "> 1%",
-    "IE 10"
+    "last 2 versions"
   ],
   "author": "",
   "license": "ISC",
@@ -35,7 +33,7 @@
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
     "stylelint": "^14.16.0",
-    "stylelint-config-htmlacademy": "^1.1.4",
+    "stylelint-config-recommended-scss": "^8.0.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
